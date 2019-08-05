@@ -1,0 +1,16 @@
+[
+  {
+    "node": "worker1",
+    "type" : "web",
+    "run": "wordpress",
+    "monitor": [
+      "nginx",
+      "php",
+      "mysql"
+    ]
+  },
+  {
+    "node": "worker2",
+    "as": "worker1"
+  }
+]
